@@ -1,65 +1,51 @@
 <!DOCTYPE html>
 <html>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<head>
-	<title>Astro Weight Calculator</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+	<head>
+		<title>Astro Weight Calculator</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
 
-<body>
-	<div id="mainPageTable" class="form-group">
-		<table id="main">
-			<tr>
-				<th id="heading">Astro Weight Calculator</th>	
-			</tr>
-			
-			<tr>
-				<td><label id="weighttitle">Your Weight</label></td>
-			    <td><label id="planettitle">Select a Planet</label></td>
-			</tr>
+	<body>
+		<div id="mainPageTable" class="form-group">
+			<table id="main">
+				<tr>
+					<th id="heading">Astro Weight Calculator</th>	
+				</tr>
+				<tr>
+					<td><label id="weighttitle">Your Weight</label></td>
+					<td><label id="planettitle">Select a Planet</label></td>
+				</tr>
+				<tr>
+					<td><input class="form-control" id="astroWeight"></input>
+					</td>
+					<td><select id="selectPlanet" class= "form-control"></select>
+					</td>	
+					<td><button type="button" id="clickon" class="btn btn-primary">Calculate</button>
+					</td>
+				</tr>
+				<tr>
+				</tr>
+			</table>
+		</div>
+			<table id="result">
+				<tr><p/></tr>
+				<pre><p id="resulttext"><br></p></pre>
+			</table>
+		<br />
 
-			<tr>
-				<td>
-					<input class="form-control" id="astroWeight"></input>
-				</td>
-				<td>
-					<select id="selectPlanet" class= "form-control"></select>
-				</td>	
-				<td>
-					<button type="button" id="clickon" class="btn btn-primary">Calculate</button>
-				</td>
-			</tr>
-			
-			<tr>
-			</tr>
-		  
-		</table>
-	</div>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="astro.js"></script>
+		<script language="javascript">
+		</script>
 
-
-	<table id="result">
-  		<tr><p></tr>
-
-  		<pre><p id="resulttext"><br></p></pre>
-
-</table>
-
-<br />
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="astro.js"></script>
-
-<script language="javascript">
-	
-</script>
-
-</body>
+	</body>
 </html>
